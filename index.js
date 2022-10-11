@@ -4,11 +4,11 @@ const express = require('express');
 const app = express();
 app.enable('trust proxy');
 
-const title = figlet.textSync('FIGlet as a Service', { font: 'Doom' });
+const title = figlet.textSync('OpenShift demo: Figlet app on MOC', { font: 'Doom' });
 
 const info = `${title}\n`
-  + '              Fetal-Neonatal Neuroimaging & Developmental Science Center\n'
-  + "                            Boston Children's Hospital\n"
+  + '              Bringing ChRIS (Storage and Compute) Fully to OpenShift and Kubernetes\n'
+  + "                            Boston University EC 528 project\n"
   + "                              and the Mass Open Cloud\n"
 
 app.get('/', (req, res) => {
